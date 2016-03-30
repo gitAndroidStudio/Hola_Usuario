@@ -74,7 +74,8 @@
         <activity android:name=".ControlGridActivity" />
         <activity android:name=".ControlRecycledActivity" />
         <activity android:name=".UICardViewActivity" />
-        <activity android:name=".ControlesPersonalizadosActivity"></activity>
+        <activity android:name=".ControlesPersonalizadosActivity" />
+        <activity android:name=".PestanasActivity"/>
     </application>
 
 </manifest>

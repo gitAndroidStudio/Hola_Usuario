@@ -55,4 +55,9 @@
         android:layout_height="wrap_content"
         android:text="@string/extendedEditText"/>
 
+    <Button android:id="@+id/BtnPestanas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pestañas"/>
+
 </LinearLayout>

@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnControlRecycled;
     private Button btnCardView;
     private Button btnExtendedEditText;
+    private Button btnPestanas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         btnControlRecycled = (Button) findViewById(R.id.BtnControlesRecicled);
         btnCardView = (Button) findViewById(R.id.BtnCardView);
         btnExtendedEditText = (Button) findViewById(R.id.BtnExtendedEditText);
+        btnPestanas = (Button) findViewById(R.id.BtnPestanas);
+
 
         //Implementamos el evento OnClick del Botón
         btnHolaUsuario.setOnClickListener(new View.OnClickListener() {
@@ -130,6 +133,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent (MainActivity.this, ControlesPersonalizadosActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //Implementamos el evento OnClick del Botón
+        btnPestanas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (MainActivity.this, PestanasActivity.class);
                 startActivity(intent);
             }
         });
