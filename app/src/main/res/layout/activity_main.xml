@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LytContenedor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button android:id="@+id/BtnHolaUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/holaUsuario"/>
+
+    <Button android:id="@+id/BtnLayouts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/layout" />
+
+    <Button android:id="@+id/BtnBotones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botones" />
+
+    <Button android:id="@+id/BtnBotonesTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botonesTexto"/>
+
+    <Button android:id="@+id/BtnBotonesCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botonesCheck"/>
+
+    <Button android:id="@+id/BtnControlesSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/controlesSpinner"/>
+
+    <Button android:id="@+id/BtnControlesGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/controlesGrid"/>
+
+    <Button android:id="@+id/BtnControlesRecicled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/controlesRecicled"/>
+
+    <Button android:id="@+id/BtnCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cardView"/>
+
+    <Button android:id="@+id/BtnExtendedEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/extendedEditText"/>
+
+</LinearLayout>

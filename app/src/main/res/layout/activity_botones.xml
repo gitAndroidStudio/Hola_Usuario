@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".BotonesActivity">
+
+    <TextView
+        android:id="@+id/LblMensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <Button
+        android:id="@+id/BtnBotonSimple"
+        android:text="@string/click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LblMensaje"/>
+
+    <ToggleButton
+        android:id="@+id/BtnToggle"
+        android:textOn="@string/on"
+        android:textOff="@string/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnBotonSimple"/>
+
+    <Switch
+        android:id="@+id/BtnSwitch"
+        android:textOn="@string/on"
+        android:textOff="@string/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnToggle"/>
+
+    <ImageButton
+        android:id="@+id/BtnImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/icono_ok"
+        android:src="@drawable/ic_estrella"
+        android:layout_below="@id/BtnSwitch"/>
+
+    <Button
+        android:id="@+id/BtnBotonMasImagen"
+        android:text="@string/click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_estrella"
+        android:drawablePadding="5dp"
+        android:layout_below="@id/BtnImagen"/>
+
+    <ToggleButton
+        android:id="@+id/BtnTogglePersonalizado"
+        android:textOff="@string/off"
+        android:textOn="@string/on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnBotonMasImagen"
+        android:background="@drawable/toggle_style"/>
+
+    <ImageButton
+        android:id="@+id/BtnSinBorde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/icono_ok"
+        android:src="@drawable/ic_estrella"
+        android:layout_below="@id/BtnTogglePersonalizado"
+        style="?android:borderlessButtonStyle" />
+
+    <LinearLayout
+        android:id="@+id/BarraBotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:divider="?android:dividerVertical"
+        android:dividerPadding="6dp"
+        android:layout_below="@id/BtnSinBorde" >
+
+        <Button android:id="@+id/BtnAceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/aceptar"
+            style="?android:borderlessButtonStyle"/>
+
+        <Button android:id="@+id/BtnCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancelar"
+            style="?android:borderlessButtonStyle" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:layout_below="@id/BarraBotones"
+        app:fabSize="normal"
+        app:borderWidth="0dp"
+        android:layout_marginLeft="16dp"
+        />
+
+</RelativeLayout>

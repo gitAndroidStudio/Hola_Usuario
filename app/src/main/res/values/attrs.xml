@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ControlLoginActivity">
+        <attr name="login_text" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="TresEnRaya">
+        <attr name="ocolor" format="color"/>
+        <attr name="xcolor" format="color"/>
+    </declare-styleable>
+</resources>

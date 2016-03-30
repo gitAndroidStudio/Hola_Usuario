@@ -1,0 +1,66 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/ImgFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher"
+        android:contentDescription="@string/imagen_ejemplo"/>
+
+    <TextView
+        android:id="@+id/LblEtiqueta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblEtiqueta"
+        android:background="#ff1ca5ff"
+        android:typeface="monospace"
+        android:layout_below="@id/ImgFoto"/>
+
+    <EditText
+        android:id="@+id/TxtBasico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@id/LblEtiqueta"/>
+
+    <Button
+        android:id="@+id/BtnInsertarTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TxtBasico"
+        android:text="@string/insertarTexto"/>
+
+    <EditText
+        android:id="@+id/TxtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:drawableLeft="@drawable/ic_usuario"
+        android:layout_below="@id/BtnInsertarTexto"
+        android:hint="@string/telefono"
+        android:textColorHint="#CFCFCF"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TiLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TxtPhone" >
+
+        <EditText android:id="@+id/TxtInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe un número par" />
+
+        <Button
+            android:id="@+id/BtnComprobar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TxtInput"
+            android:text="@string/comprobar"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+</RelativeLayout>
