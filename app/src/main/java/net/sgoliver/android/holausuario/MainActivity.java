@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnCardView;
     private Button btnExtendedEditText;
     private Button btnPestanas;
+    private Button btnFragments;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         btnCardView = (Button) findViewById(R.id.BtnCardView);
         btnExtendedEditText = (Button) findViewById(R.id.BtnExtendedEditText);
         btnPestanas = (Button) findViewById(R.id.BtnPestanas);
+        btnFragments = (Button) findViewById(R.id.BtnFragments);
 
 
         //Implementamos el evento OnClick del Botón
@@ -142,6 +144,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent (MainActivity.this, PestanasActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //Implementamos el evento OnClick del Botón
+        btnFragments.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (MainActivity.this, FragmentsActivity.class);
                 startActivity(intent);
             }
         });

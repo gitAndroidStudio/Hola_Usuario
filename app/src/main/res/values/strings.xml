@@ -51,5 +51,6 @@
     <string name="usuario">Usuario</string>
     <string name="password">Contraseña</string>
     <string name="login">Login</string>
-    <string name="pestañas">Pestañas</string>
+    <string name="pestanas">Pestañas</string>
+    <string name="fragments">Fragments</string>
 </resources>

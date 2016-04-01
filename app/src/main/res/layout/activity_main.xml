@@ -58,6 +58,11 @@
     <Button android:id="@+id/BtnPestanas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pestañas"/>
+        android:text="@string/pestanas"/>
+
+    <Button android:id="@+id/BtnFragments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragments"/>
 
 </LinearLayout>
