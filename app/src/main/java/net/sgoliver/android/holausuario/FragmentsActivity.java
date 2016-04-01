@@ -24,6 +24,7 @@ public class FragmentsActivity extends AppCompatActivity implements FragmentList
             Intent intent = new Intent(FragmentsActivity.this, FragmentDetalle.class);
             intent.putExtra(DetalleActivity.EXTRA_TEXTO, c.getTexto());
             startActivity(intent);
+
         }
     }
 }
