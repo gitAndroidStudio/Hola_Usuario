@@ -53,4 +53,6 @@
     <string name="login">Login</string>
     <string name="pestanas">Pestañas</string>
     <string name="fragments">Fragments</string>
+    <string name="action_buscar">Buscar</string>
+    <string name="action_nuevo">Nuevo</string>
 </resources>
